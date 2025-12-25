@@ -45,3 +45,7 @@ def login(data,db):
             raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail='Invalid details')
             
 
+def get_user(email, role, db):
+    user_data = db.query(userModel.UserModel).filter(userModel.UserModel.email == email).filter(userModel.UserModel.role == role).first()
+    return user_data
+    
