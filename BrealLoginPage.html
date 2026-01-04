@@ -3,12 +3,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome back </title>
-  <script src="BrealLoginP.js"></script>
-  <link rel="stylesheet" href="BrealLoginPage.css">
+  <link rel="stylesheet" href="css/BrealLoginPage.css">
 </head>
 <body>
   <div class="container">
     <div class="content">
+      <div class="signInDetails">
       <div class="Logo">
         <div class="logo1"></div>
         <div class="logo2"></div>
@@ -19,12 +19,12 @@
       <p>Access the progress of your project</p>
       <div class="InputContainer">
         <p>Username or Email</p>
-        <input type="email" class="DataInput" placeholder="e.g potentialcustomer@gamil.com" required>
+        <input type="email" class="DataInput email" placeholder="e.g potentialcustomer@gmail.com" required>
         <i></i>
       </div>
       <div class="InputContainer">
         <p>Password</p>
-        <input type="password" placeholder="Enter your password" class="DataInput" required>
+        <input type="password" placeholder="Enter your password" class="DataInput password" required>
         <i src="images/unlock.png"></i>
       </div>
       <div class="TermsandC">
@@ -33,34 +33,36 @@
       </div>
       <button class="LoginBtn">LOGIN</button>
       <p>Not registered?<button class="signupBtn">Signup</button></p>
+      </div>
       <div class="signupImg"></div>
     </div>
     <div class="ImgRef">
-      <img src="" alt="Work display">
+      <img class="signUpImg" src="" alt="Work display">
       <div class="SignupCont">
         <h3>Welcome, you're about to make a very good decision</h3>
-        <div>
+        <div class="InputContainer">
           Username
-          <input class="username" type="text" placeholder="Username">
+          <input class="username DataInput" type="text" placeholder="Username">
         </div>
-        <div>Fullname
-          <input class="fullname" type="text" placeholder="Fullname e.g Dolapo Chinedu Diko">
+        <div class="InputContainer">Fullname
+          <input class="fullname DataInput" type="text" placeholder="Fullname e.g Dolapo Chinedu Diko">
         </div>
-        <div>Email
-          <input class="signupEmail" type="email" placeholder="e.g name@email.com">
+        <div class="InputContainer">Email
+          <input class="signupEmail DataInput" type="email" placeholder="e.g name@email.com">
         </div>
-        <div>Password
-          <input class="SignupPassword" type="password" placeholder="password">
+        <div class="InputContainer">Password
+          <input class="SignupPassword DataInput" type="password" placeholder="password">
         </div>
-        <div>Confirm Password
-          <input class="passwordConfirm" type="password" placeholder="confirm password">
+        <div class="InputContainer">Confirm Password
+          <input class="passwordConfirm DataInput" type="password" placeholder="confirm password">
         </div>
   
         <div><input type="radio"> Remember me</div>
         <button class="getInBtn">SIGN UP</button>
+        <p>Already signup before? <button class="signinBtn">SignIn</button></p>
       </div>
     </div>
   </div>
+  <script src="JS/BrealLoginP.js"></script>
 </body>
-
 </html>
