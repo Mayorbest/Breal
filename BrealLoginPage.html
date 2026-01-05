@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome back </title>
-  <link rel="stylesheet" href="BrealLoginPage.css">
+  <link rel="stylesheet" href="css/BrealLoginPage.css">
 </head>
 <body>
   <div class="container">
@@ -28,9 +28,10 @@
         <i src="images/unlock.png"></i>
       </div>
       <div class="TermsandC">
-        <input type="radio">
+        <input type="checkbox">
         <p class="Tandc">Agree to terms and condition</p>
       </div>
+      <div class="TermsandC"><input type="checkbox" class="rememberMe"><p class="Tandc">Remember me</p></div>
       <button class="LoginBtn">LOGIN</button>
       <p>Not registered?<button class="signupBtn">Signup</button></p>
       </div>
@@ -42,7 +43,7 @@
         <h3>Welcome, you're about to make a very good decision</h3>
         <div class="InputContainer">
           Username
-          <input class="username DataInput" type="text" placeholder="Username">
+          <input class="newUsername DataInput" type="text" placeholder="Username">
         </div>
         <div class="InputContainer">Fullname
           <input class="fullname DataInput" type="text" placeholder="Fullname e.g Dolapo Chinedu Diko">
@@ -57,13 +58,12 @@
           <input class="passwordConfirm DataInput" type="password" placeholder="confirm password">
         </div>
   
-        <div><input type="radio"> Remember me</div>
+        <div><input type="checkbox" class="rememberMe"> <p class="Tandc">Remember me</P></div>
         <button class="getInBtn">SIGN UP</button>
         <p>Already signup before? <button class="signinBtn">SignIn</button></p>
       </div>
     </div>
   </div>
-  <script src="BrealLoginP.js"></script>
+  <script src="JS/BrealLoginP.js"></script>
 </body>
-
 </html>
